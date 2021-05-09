@@ -4,4 +4,4 @@ My blog/resume website where I'll be hosting many tutorials
 
 To run localy, run `bundle exec jekyll serve`
 
-Live URL [dgaspard.com]
+Live URL [dgaspard.com](dgaspard.com)
