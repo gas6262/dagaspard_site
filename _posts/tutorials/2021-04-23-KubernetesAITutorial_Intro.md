@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating an AI WebApp on Kubernetes - Lesson 1"
+title:  "Creating an AI WebApp on Kubernetes - Angular Dotnet WebApp Introduction"
 description:  "Learn how to create a world-scale AI web application on Kubernetetes using Angular, ASP.net, Azure Functions, C#, and Python"
 featured: true
 author: david
@@ -21,9 +21,8 @@ Medium
 
 [comment]: TODO Add table content to different lessons
 
-
 **Things You will need** Try to download/install these things in parallel
-+  **A good attitude**. This may take a while
++  **A good attitude**. This may take a while.
 +  [Visual Studio Code](https://code.visualstudio.com/download) for development
 +  Basic programming/website knowledge (not algorithmic)
 +  [Some basic C# experience](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=1) to create the Webapi (backend)

@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "How To Create A Dotnet Core Docker WebAPI - Lesson 2"
+title:  "How To Create A Dotnet Core Docker WebAPI - Angular Dotnet WebApp Lesson 2"
 description:  "Learn how to create a world-scale AI web application on Kubernetes using Angular, ASP.net, Azure Functions, C#, and Python"
-featured: true
+featured: false
 author: david
 categories: [ Jekyll, tutorial ]
 image: assets/images/dotnetcore_docker.png
 ---
 
-# Creating a containerized dontent core web API
-Microservices serve as the core building blocks of any modern web application. Developing your application as a mesh of interacting web APIs with very specific responsibilities allows for greater scalability, independence between services and developers, and heterogeneity between stacks best suited for different tasks.
+# Creating a containerized dotnet core web API
+Microservices serve as the core building blocks of any modern web application. Developing your application as a mesh of interacting web APIs with very specific responsibilities allows for greater scalability, independence between services and developers, and heterogeneity between stacks best suited for different tasks. The separation between web APIs and your web application UI is so that you can reuse the web APIs across multiple UIs, such as as web, Android, and iPhone.
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
@@ -134,7 +134,7 @@ Let's
 Now rebuild and run the container
 
 ```shell
-docker build -t webapi:v1
+docker build -t webapi:v1 .
 docker run -it --rm -p 8080:5000 webapi:v1
 ```
 
