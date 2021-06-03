@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How To Create A Dotnet Core Docker WebAPI - Angular Dotnet WebApp Lesson 2"
+title:  "How To Create A Dotnet Core Docker WebAPI - Angular Dotnet WebApp Lesson 1"
 description:  "Learn how to create a world-scale AI web application on Kubernetes using Angular, ASP.net, Azure Functions, C#, and Python"
 featured: false
 author: david
