@@ -214,6 +214,23 @@ section.recent-posts {
     display: inline-block;
 }
 
+div.galleryblock{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 0.81fr 1fr 0.81fr 1fr;
+
+
+    grid-template-areas:
+        "img1  img2  img3 img4   img5"
+        "img1  img7  img3 img9   img5"
+        "img6  img7  img8 img9   img10"
+        "img6  img12 img8 img14  img10 "
+        "img11 img12 img13 img14 img15";
+
+    grid-gap: 0.5em;
+}
+
 .post-top-meta .author-description {
     margin-bottom: 5px;
     margin-top: 5px;

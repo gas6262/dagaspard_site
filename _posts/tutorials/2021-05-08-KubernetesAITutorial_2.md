@@ -4,7 +4,7 @@ title:  "How To Create An Angular Web App And Containerize It - Angular Dotnet W
 description:  "Learn how to create a world-scale AI web application on Kubernetes using Angular, ASP.net, Azure Functions, C#, and Python"
 featured: false
 author: david
-categories: [ Jekyll, tutorial ]
+tags: [kubernetes, c#, systemdesign, angular]
 duration: long
 difficulty: medium
 image: assets/images/aikub/lesson2/angular_docker.png
@@ -42,8 +42,7 @@ This will create a new webapp called *webapp* in the current directory. **Note**
 
 ```shell
 # Only run this if 'ng new' fails with ERESOLVE error
-rm -rf * # Delete all files in current directory
-ng new webapp --directory . --force
+
 npm install --legacy-peer-deps
 ```
 
@@ -153,13 +152,13 @@ The HTML inside of **app-component.html** that we just edited is *bound* to the 
 
 Now that we have a default value, we can force the app component to retrieve the data from our web API upon loading. When the data is retrieved, it will automatically update the message value in the page to the message retrieved from the web API.
 
-1. Update the app module defined in *src/app/app.module.ts* to import the *HttpClient* module
+1) Update the app module defined in *src/app/app.module.ts* to import the *HttpClient* module
 
 ![httpclinetmoduleimport]({{ site.baseurl }}/assets/images/aikub/lesson2/httpclinetmoduleimport.png)
 
-2. Update the app component (app-component.html) to load the HttpClient with `import { HttpClient } from '@angular/common/http';`. 
-2. Add the code to create a constructor method for the app component `constructor(){}`. *Constructors* are methods that are called to initialize a class when a new instance of the class is instantiated.
-4. Inside of this constructor signature, inject an HttpClient member with constructor argument `private http: HttpClient`
+2) Update the app component (app-component.html) to load the HttpClient with `import { HttpClient } from '@angular/common/http';`. 
+3) Add the code to create a constructor method for the app component `constructor(){}`. *Constructors* are methods that are called to initialize a class when a new instance of the class is instantiated.
+4) Inside of this constructor signature, inject an HttpClient member with constructor argument `private http: HttpClient`
 
 ![addhttpcomponent]({{ site.baseurl }}/assets/images/aikub/lesson2/addhttpcomponent.png)
 
@@ -187,9 +186,9 @@ export class AppComponent {
 }
 ```
 
-Now, we will load the data from our web API in the constructor of the component class. Of course, this is not best practice for object-oriented or parallel programming, but is the simplest implementation for the sake of this tutorial.
+Now, we will load the data from our web API in the constructor of the component class. Of course, this is not best practice for object-oriented or parallel programming to fetch data directly in the constructor, but is the simplest implementation for the sake of this tutorial.
 
-5. Add the code below to your constructor body
+5) Add the code below to your constructor body
 
 ```typescript
       // The location of our web API where the data of interest is served

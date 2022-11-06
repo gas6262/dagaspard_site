@@ -4,7 +4,7 @@ title:  "How To Create A Dotnet Core Docker WebAPI - Angular Dotnet WebApp Lesso
 description:  "Learn how to create a world-scale AI web application on Kubernetes using Angular, ASP.net, Azure Functions, C#, and Python"
 featured: false
 author: david
-categories: [ Jekyll, tutorial ]
+tags: [kubernetes, c#, systemdesign, angular]
 image: assets/images/dotnetcore_docker.png
 ---
 
@@ -51,14 +51,14 @@ This should bring up visual studio code. Once VSCode is up, you should be able t
 
 If all is successful, a new browser window should have opened displaying a dummy json data in the browser.
 
-**If you are getting a 404 error in the browser**, it may be that the browser defaulted to open the root location of the webAPI. Does the browser URL if the opened window point to `http://localhost:<port>/` At the time of writing this article using .netcore 5, newly created webapi projects came with only one endpoint/controller, which was /weatherforecast. If so, navigate to the `/weatherforecast` path like so
+**If you are getting a 404 error in the browser**, it may be that the browser defaulted to open the root location of the webAPI. At the time of writing this article using dotnetcore 5, newly created webapi projects came with only one endpoint/controller, which was the `/weatherforecast` endpoint. If so, navigate to the `/weatherforecast` path like so.
 
 ![start]({{ site.baseurl }}/assets/images/aikub/lesson1/weather.png)
 
 Congratulations, you have sucessfully created your first WebAPI!
 
 ### 2. Dockerizing your new application
-Once you've installed [docker](#Prerequisites) on your machine, in order to dockerize your web application, you wil not need to install the docker VSCode extension. You can do this by going to the extensions menu in VSCode and searching for and installing the docker extension.
+Once you've installed [docker](#Prerequisites) on your machine, in order to dockerize your web application, you will need to install the docker VSCode extension. You can do this by going to the extensions menu in VSCode and searching for and installing the docker extension.
 
 ![docker_extension]({{ site.baseurl }}/assets/images/aikub/lesson1/docker_extension.png)
 
@@ -144,4 +144,4 @@ If you wish to add new controllers to the project, simply create the new cs file
 
 All set!
 
-In the next section, we will learn how to create and dockerize a webapp (UI) and dockerize it for our application.
+In the next section, we will learn how to create and dockerize a webapp (UI) for our application.

@@ -4,7 +4,7 @@ title:  "Creating an AI WebApp on Kubernetes - Angular Dotnet WebApp Introductio
 description:  "Learn how to create a world-scale AI web application on Kubernetetes using Angular, ASP.net, Azure Functions, C#, and Python"
 featured: true
 author: david
-categories: [ Jekyll, tutorial ]
+tags: [kubernetes, c#, systemdesign, angular]
 image: assets/images/siteflow.png
 ---
 
