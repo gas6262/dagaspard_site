@@ -8,9 +8,10 @@ tags: [react, js, data, javascript, freslertable]
 image: assets/images/fresler-table.png
 ---
 
-In today's data-driven world, presenting information in an accessible and visually appealing manner is crucial for any web application. If you're building a React app, you might already know that displaying data effectively can significantly enhance user experience. But how do you go about creating a data table that is both functional and beautiful without getting bogged down in complexity? Fortunately, there are straightforward ways to achieve this.
+<iframe width="420" height="315" src="http://www.youtube.com/embed/tQskpxX32So" frameborder="0" allowfullscreen></iframe>
 
-In this article, we'll guide you through the simplest method to display a stunning data table in your React app. Whether you're a beginner looking to grasp the basics or a seasoned developer aiming to streamline your workflow, you'll find practical insights and easy-to-follow steps here. We'll explore the use of popular libraries, essential components, and best practices to ensure your data tables not only look great but also perform efficiently.
+
+Tired of using underwhelming table libraries or building them from scratch?  In this article, we'll guide you through the simplest method to display a stunning data table in your React app. Whether you're a beginner looking to grasp the basics or a seasoned developer aiming to streamline your workflow, you'll find practical insights and easy-to-follow steps here. We'll explore the use of popular libraries, essential components, and best practices to ensure your data tables not only look great but also perform efficiently.
 
 If you get lost, don't worry! You can clone the example from the [FreslerTable example repo](https://github.com/gas6262/fresler-table-examples/tree/main/examples/simple-table).
 
