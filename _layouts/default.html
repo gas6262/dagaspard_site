@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
-<title>{{ page.title }} | {{site.name}}</title>
+    <title>{{ page.title }} | {{site.name}}</title>
 
-<!-- Add Application Insights script -->
-<script type="text/javascript">
-    !function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights",n=(T[t]||function(d){var g=!1,f=!1,m=T[t]||function(){(m[q]||m[l]||[]).push(arguments)};m.q=m.q||[],m.l=1*new Date,m[y]=y;for(var q in d)y[q]=d[q];var h=l.createElement(k);h.src=d.src,h[w]=d[w];var a=l.getElementsByTagName(k)[0];a.parentNode.insertBefore(h,a),y.ld(g)},y.ld=function(e){var t=T[t];t&&t.queue&&t.queue.length&&(t.queue.forEach(function(e){t[e[0]].apply(t,e.slice(1))}),t.queue.length=0)},T[t]=n,n.queue=[];var p=["Event","Exception","Metric","PageView","Trace","Dependency"];for(var v in p)n["track"+p[v]]=function(e){var t=function(){n.queue.push(["track"+e].concat(Array.prototype.slice.call(arguments,0)))};return t}();var o={src:"https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js"};o[D]="YOUR_INSTRUMENTATION_KEY";for(var s in y)o[s]=y[s];n.appInsights=n.appInsights||n,e.queue=e.queue||[],e.queue.push(function(){e.config=o,e[e]={},e[e][D]=o[D],e[e][I]=o[I]});var r=["trackPageView","trackException","trackEvent","trackTrace","trackMetric","trackDependencyData","setAuthenticatedUserContext","clearAuthenticatedUserContext","startTrackEvent","stopTrackEvent","startTrackPage","stopTrackPage","flush"];for(var u in r)n[r[u]]=function(e){return function(){var t=arguments;n.queue.push(function(){n[e].apply(n,t)})}}(r[u])}({src:"https://js.monitor.azure.com/scripts/b/ai.2.min.js",name:t,disableExceptionTracking:!1,crossOrigin:!0},document,window,{}); appInsights=window.appInsights||function(config){function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window;for(var o=["Event","Exception","Metric","PageView","Trace","Dependency"];o.length;)r("track"+o.pop());return t.cookie=r,u.readyState<"complete"?(u.addEventListener("DOMContentLoaded",a=!0),u.addEventListener("load",a=!0),u.addEventListener("beforeunload",a=!0)):a();function a(){for(var e;(e=t.queue.shift();)()}} return window.appInsights=n(),t.startTrackPage(),t.trackPageView({ referrer:T.referrer })}({ instrumentationKey: "2f37eeb0-ed0e-43b9-a917-b36dad2de43a" });
-    appInsights.trackPageView();
-</script>
+    <!-- Add Application Insights script -->
+    <script type="text/javascript">
+        !(function (cfg) { function e() { cfg.onInit && cfg.onInit(n) } var x, w, D, t, E, n, C = window, O = document, b = C.location, q = "script", I = "ingestionendpoint", L = "disableExceptionTracking", j = "ai.device."; "instrumentationKey"[x = "toLowerCase"](), w = "crossOrigin", D = "POST", t = "appInsightsSDK", E = cfg.name || "appInsights", (cfg.name || C[t]) && (C[t] = E), n = C[E] || function (g) { var f = !1, m = !1, h = { initialize: !0, queue: [], sv: "8", version: 2, config: g }; function v(e, t) { var n = {}, i = "Browser"; function a(e) { e = "" + e; return 1 === e.length ? "0" + e : e } return n[j + "id"] = i[x](), n[j + "type"] = i, n["ai.operation.name"] = b && b.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (h.sv || h.version), { time: (i = new Date).getUTCFullYear() + "-" + a(1 + i.getUTCMonth()) + "-" + a(i.getUTCDate()) + "T" + a(i.getUTCHours()) + ":" + a(i.getUTCMinutes()) + ":" + a(i.getUTCSeconds()) + "." + (i.getUTCMilliseconds() / 1e3).toFixed(3).slice(2, 5) + "Z", iKey: e, name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } }, ver: undefined, seq: "1", aiDataContract: undefined } } var n, i, t, a, y = -1, T = 0, S = ["js.monitor.azure.com", "js.cdn.applicationinsights.io", "js.cdn.monitor.azure.com", "js0.cdn.applicationinsights.io", "js0.cdn.monitor.azure.com", "js2.cdn.applicationinsights.io", "js2.cdn.monitor.azure.com", "az416426.vo.msecnd.net"], o = g.url || cfg.src, r = function () { return s(o, null) }; function s(d, t) { if ((n = navigator) && (~(n = (n.userAgent || "").toLowerCase()).indexOf("msie") || ~n.indexOf("trident/")) && ~d.indexOf("ai.3") && (d = d.replace(/(\/)(ai\.3\.)([^\d]*)$/, function (e, t, n) { return t + "ai.2" + n })), !1 !== cfg.cr) for (var e = 0; e < S.length; e++)if (0 < d.indexOf(S[e])) { y = e; break } var n, i = function (e) { var a, t, n, i, o, r, s, c, u, l; h.queue = [], m || (0 <= y && T + 1 < S.length ? (a = (y + T + 1) % S.length, p(d.replace(/^(.*\/\/)([\w\.]*)(\/.*)$/, function (e, t, n, i) { return t + S[a] + i })), T += 1) : (f = m = !0, s = d, !0 !== cfg.dle && (c = (t = function () { var e, t = {}, n = g.connectionString; if (n) for (var i = n.split(";"), a = 0; a < i.length; a++) { var o = i[a].split("="); 2 === o.length && (t[o[0][x]()] = o[1]) } return t[I] || (e = (n = t.endpointsuffix) ? t.location : null, t[I] = "https://" + (e ? e + "." : "") + "dc." + (n || "services.visualstudio.com")), t }()).instrumentationkey || g.instrumentationKey || "", t = (t = (t = t[I]) && "/" === t.slice(-1) ? t.slice(0, -1) : t) ? t + "/v2/track" : g.endpointUrl, t = g.userOverrideEndpointUrl || t, (n = []).push((i = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", o = s, u = t, (l = (r = v(c, "Exception")).data).baseType = "ExceptionData", l.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: i.replace(/\./g, "-"), hasFullStack: !1, stack: i + "\nSnippet failed to load [" + o + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (b && b.pathname || "_unknown_") + "\nEndpoint: " + u, parsedStack: [] }], r)), n.push((l = s, i = t, (u = (o = v(c, "Message")).data).baseType = "MessageData", (r = u.baseData).message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + l + ")").replace(/\"/g, "") + '"', r.properties = { endpoint: i }, o)), s = n, c = t, JSON && ((u = C.fetch) && !cfg.useXhr ? u(c, { method: D, body: JSON.stringify(s), mode: "cors" }) : XMLHttpRequest && ((l = new XMLHttpRequest).open(D, c), l.setRequestHeader("Content-type", "application/json"), l.send(JSON.stringify(s))))))) }, a = function (e, t) { m || setTimeout(function () { !t && h.core || i() }, 500), f = !1 }, p = function (e) { var n = O.createElement(q), e = (n.src = e, t && (n.integrity = t), n.setAttribute("data-ai-name", E), cfg[w]); return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = a, n.onerror = i, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || a(0, t) }, cfg.ld && cfg.ld < 0 ? O.getElementsByTagName("head")[0].appendChild(n) : setTimeout(function () { O.getElementsByTagName(q)[0].parentNode.appendChild(n) }, cfg.ld || 0), n }; p(d) } cfg.sri && (n = o.match(/^((http[s]?:\/\/.*\/)\w+(\.\d+){1,5})\.(([\w]+\.){0,2}js)$/)) && 6 === n.length ? (d = "".concat(n[1], ".integrity.json"), i = "@".concat(n[4]), l = window.fetch, t = function (e) { if (!e.ext || !e.ext[i] || !e.ext[i].file) throw Error("Error Loading JSON response"); var t = e.ext[i].integrity || null; s(o = n[2] + e.ext[i].file, t) }, l && !cfg.useXhr ? l(d, { method: "GET", mode: "cors" }).then(function (e) { return e.json()["catch"](function () { return {} }) }).then(t)["catch"](r) : XMLHttpRequest && ((a = new XMLHttpRequest).open("GET", d), a.onreadystatechange = function () { if (a.readyState === XMLHttpRequest.DONE) if (200 === a.status) try { t(JSON.parse(a.responseText)) } catch (e) { r() } else r() }, a.send())) : o && r(); try { h.cookie = O.cookie } catch (k) { } function e(e) { for (; e.length;)!function (t) { h[t] = function () { var e = arguments; f || h.queue.push(function () { h[t].apply(h, e) }) } }(e.pop()) } var c, u, l = "track", d = "TrackPage", p = "TrackEvent", l = (e([l + "Event", l + "PageView", l + "Exception", l + "Trace", l + "DependencyData", l + "Metric", l + "PageViewPerformance", "start" + d, "stop" + d, "start" + p, "stop" + p, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), h.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }, (g.extensionConfig || {}).ApplicationInsightsAnalytics || {}); return !0 !== g[L] && !0 !== l[L] && (e(["_" + (c = "onerror")]), u = C[c], C[c] = function (e, t, n, i, a) { var o = u && u(e, t, n, i, a); return !0 !== o && h["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: i, error: a, evt: C.event }), o }, g.autoExceptionInstrumented = !0), h }(cfg.cfg), (C[E] = n).queue && 0 === n.queue.length ? (n.queue.push(e), n.trackPageView({})) : e(); })({
+            src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
+            // name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+            // ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+            // useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+            // dle: true, // Prevent the SDK from reporting load failure log
+            crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+            // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DON'T ADD anything to the sdk.queue -- As they won't get called)
+            // sri: false, // Custom optional value to specify whether fetching the snippet from integrity file and do integrity check
+            cfg: { // Application Insights Configuration
+                connectionString: "InstrumentationKey=2f37eeb0-ed0e-43b9-a917-b36dad2de43a;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=ae775c26-304b-4efc-8cb4-b1edd1d7e3cc",
+                autoTrackPageVisitTime: true // Auto track page visit time
+            }
+        });
+    </script>
 
-{% seo %}
+    {% seo %}
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-{% include analytics.html %}
+    <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+    {% include analytics.html %}
 
 </head>
 
@@ -33,53 +47,57 @@
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
 <body class="{{layout}}">
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </noscript>
 
 
-<!-- Begin Menu Navigation
+    <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
 
-    <div class="container pr-0">
+        <div class="container pr-0">
 
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>
-    <!-- End Logo -->
+            <!-- Begin Logo -->
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+            </a>
+            <!-- End Logo -->
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="collapse navbar-collapse" id="navbarMediumish">
+            <div class="collapse navbar-collapse" id="navbarMediumish">
 
-        <!-- Begin Menu -->
+                <!-- Begin Menu -->
 
-            <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
-                </li>
+                    {% if page.url == "/" %}
+                    <li class="nav-item active">
+                        {% else %}
+                    <li class="nav-item">
+                        {% endif %}
+                        <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
+                    </li>
 
-                <li class="nav-item">
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                    </li>
 
-                <!-- <li class="nav-item">
+                    <!-- <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/"> Docs</a>
                 </li> -->
 
-                <!-- <li class="nav-item">
+                    <!-- <li class="nav-item">
                 <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
                 </li>
 
@@ -91,109 +109,123 @@
                 <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
                 </li> -->
 
-                {% include search-lunr.html %}
+                    {% include search-lunr.html %}
 
-            </ul>
+                </ul>
 
-        <!-- End Menu -->
+                <!-- End Menu -->
 
-    </div>
-
-    </div>
-</nav>
-<!-- End Navigation
-================================================== -->
-
-<div class="site-content">
-
-<div class="container">
-
-<!-- Content
-================================================== -->
-<div class="main-content">
-    {{ content }}
-</div>
-
-{% if site.mailchimp-list %}
-<!-- Bottom Alert Bar
-================================================== -->
-<div class="alertbar">
-	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-            <div class="mc-field-group">
-            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
             </div>
-        </form>
-	</div>
-</div>
-{% endif %}
-    
-</div>
 
-<!-- Categories Jumbotron
+        </div>
+    </nav>
+    <!-- End Navigation
 ================================================== -->
-<div class="jumbotron fortags">
-	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-            <div class="d-md-flex align-items-center justify-content-center h-100">
-                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+
+    <div class="site-content">
+
+        <div class="container">
+
+            <!-- Content
+================================================== -->
+            <div class="main-content">
+                {{ content }}
             </div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-            {% assign categories_list = site.categories %}
-            {% if categories_list.first[0] == null %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})</a>
-                {% endfor %}
-            {% else %}
-                {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
-                {% endfor %}
+
+            {% if site.mailchimp-list %}
+            <!-- Bottom Alert Bar
+================================================== -->
+            <div class="alertbar">
+                <div class="container text-center">
+                    <span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never miss a
+                        <b>story</b> from us, subscribe to our newsletter</span>
+                    <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
+                        class="wj-contact-form validate" target="_blank" novalidate>
+                        <div class="mc-field-group">
+                            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
+                                autocomplete="on" required>
+                            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+                        </div>
+                    </form>
+                </div>
+            </div>
             {% endif %}
-            {% assign categories_list = nil %}
-		</div>
-	</div>
-</div>
 
-<!-- Begin Footer
+        </div>
+
+        <!-- Categories Jumbotron
 ================================================== -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+        <div class="jumbotron fortags">
+            <div class="d-md-flex h-100">
+                <div class="col-md-4 transpdark align-self-center text-center h-100">
+                    <div class="d-md-flex align-items-center justify-content-center h-100">
+                        <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span
+                                class="d-none d-md-inline">→</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-8 p-5 align-self-center text-center">
+                    {% assign categories_list = site.categories %}
+                    {% if categories_list.first[0] == null %}
+                    {% for category in categories_list %}
+                    <a class="mt-1 mb-1"
+                        href="{{site.baseurl}}/categories#{{ category | url_escape | strip | replace: ' ', '-' }}">{{
+                        category | camelcase }} ({{ site.tags[category].size }})</a>
+                    {% endfor %}
+                    {% else %}
+                    {% for category in categories_list %}
+                    <a class="mt-1 mb-1"
+                        href="{{site.baseurl}}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{
+                        category[0] | camelcase }} ({{ category[1].size }})</a>
+                    {% endfor %}
+                    {% endif %}
+                    {% assign categories_list = nil %}
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- End Footer
+
+        <!-- Begin Footer
+================================================== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                        Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                        <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish
+                            Jekyll Theme</a> by WowThemes.net
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer
 ================================================== -->
 
-</div> <!-- /.site-content -->
+    </div> <!-- /.site-content -->
 
-<!-- Scripts
+    <!-- Scripts
 ================================================== -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
 
-{% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-{% endif %}
+    {% if site.lazyimages == "enabled" %}
+    <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+    {% endif %}
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+    <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
+    {% if page.layout == 'post' %}
+    <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+    {% endif %}
 
 </body>
+
 </html>
