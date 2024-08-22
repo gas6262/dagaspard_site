@@ -7,7 +7,7 @@ favicon: 'assets/images/favicon.ico'
 google_analytics: 'UA-201577781-1'
 # disqus: 'demowebsite'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
+include: ["_pages", ".well-known"]
 permalink: /:title/
 baseurl: "" # the subpath of your site, e.g. /blog
 
