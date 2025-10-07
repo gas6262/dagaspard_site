@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "My Miami Condo Nightmare: The HOA From Hell"
+title:  "Paradise Lost: Hard Financial Lessons from My Miami HOA Nightmare"
 author: david
 tags: [realestate, investments]
-image: "assets/images/articles/sd_resources/hoa_hell.png"
+image: "assets/images/articles/sd_resources/pd.png"
 ---
 **Your choices, your consequences.** I made a decision to buy a condo in Miami during the pandemic housing frenzy, and I had to live with every consequence of that choice. What followed was a hellish, years-long saga that tested my sanity, finances, and patience. I'm sharing this cautionary tale for anyone considering a condo purchase in Miami (or anywhere with a powerful HOA) - learn from my mistakes, and proceed with caution!
 
